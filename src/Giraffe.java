@@ -6,6 +6,7 @@ public class Giraffe extends Mammal implements Prey{
         this.giraffeSpeciality = giraffeSpeciality;
     }
 
+   @Override
     public void show(){
         System.out.println(getName() + "," + getAge() + "," + getSpeed() + "," + giraffeSpeciality);
     }
