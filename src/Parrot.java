@@ -6,7 +6,9 @@ public class Parrot extends Bird implements Prey{
         this.parrotSpecialty = parrotSpecialty;
     }
 
+    @Override
     public void show(){
-        System.out.println(getName() + "," + getAge() + "," + getHeightOfFlight() + "," + parrotSpecialty);
+        System.out.println("name: " + getName() + ", " + "age: " + getAge() + ", " + "height of flight: " +
+                getHeightOfFlight() + ", " + "\""+parrotSpecialty+"\"");
     }
 }

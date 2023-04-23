@@ -6,7 +6,13 @@ public class Cheetah extends Mammal implements Hunter{
         this.cheetahSpecialty = cheetahSpecialty;
     }
 
+    @Override
     public void show(){
-        System.out.println(getName() + "," + getAge() + "," + getSpeed() + "," + cheetahSpecialty);
+        System.out.println("name: " + getName() + ", " + "age: " + getAge() + ", " + "speed: " + getSpeed() + ", " +
+                "\""+cheetahSpecialty+"\"");
+    }
+    @Override
+    public void hunt(Prey prey){
+        System.out.println(getName()+" hunted "+ prey.getName());
     }
 }
