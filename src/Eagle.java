@@ -10,4 +10,8 @@ public class Eagle extends Bird implements Hunter{
     public void show(){
         System.out.println(getName() + "," + getAge() + "," + getHeightOfFlight() + "," + eagleSpecialty);
     }
+    @Override
+    public void hunt(Prey prey){
+        System.out.println(getName()+" hunted "+ prey.getName());
+    }
 }
